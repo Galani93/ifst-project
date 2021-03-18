@@ -601,10 +601,9 @@ p.confi {
   align-items: center;
 
   .program-bloc-1{
-    width: 570px;
-    height: 715px;
     background: #F2F2FF;
     border-radius: 20px;
+    padding: 80px;
 
     &:first-child{
       margin-right: 30px;
@@ -628,7 +627,7 @@ p.confi {
   letter-spacing: 0.05em;
   text-transform: uppercase;
   color: #F6255A;
-  margin: 80px ;
+  padding-bottom: 40px;
 }
 .bloc-name{
   h4{
@@ -643,10 +642,13 @@ p.confi {
     font-weight: normal;
     font-size: 18px;
     line-height: 140%;
+    padding-top: 10px;
     color: #000000;
   }
 }
-
+.row.mb-2 {
+  margin-bottom: 24px;
+}
 
 
 
@@ -1067,6 +1069,14 @@ p.confi {
     }
 
   }
+  .row.program-bloc {
+    flex-direction: column;
+    margin: 10px;
+
+    .col-md-6.col-sm-12.program-bloc-1 {
+      margin: 10px auto!important;
+    }
+  }
 
 }
 
@@ -1324,6 +1334,9 @@ p.confi {
 
   div#regModal .modal-header {
     padding: 40px 20px 0;
+  }
+  .col-md-6.col-sm-12.program-bloc-1 {
+    padding: 15px;
   }
 }
 
