@@ -51,6 +51,7 @@ img.header-logo {
   color: #f6255b;
   font-size: 16px;
   font-weight: 500;
+  padding: 0 4px;
 }
 .header-contact .primer-btn {
   width: 128px;
@@ -272,6 +273,7 @@ button.header-btn {
   font-weight: 700;
   margin: 0 0 80px 0;
   color: #F2F2FF;
+  text-transform: uppercase;
 }
 
 .useg-bloc {
@@ -283,9 +285,13 @@ button.header-btn {
   filter: drop-shadow(10px 10px 20px rgba(0, 6, 46, 0.47));
   border-radius: 8px;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   color: #F2F2FF;
+}
+
+.checed {
+  margin: 0 15px 0 27px;
 }
 
 .useg-bloc:nth-child(2n+1) {
@@ -303,18 +309,8 @@ button.header-btn {
   line-height: 140%;
   display: flex;
   align-items: center;
-  margin-left: 30px;
+  margin: 0;
   color: #F2F2FF;
-}
-.useg:before {
-  content: url("../img/check-square.png");
-  display: block;
-  height: 24px;
-  width: 24px;
-  margin: 0 15px 0 26px;
-  position: absolute;
-  left: 0;
-  right: 0;
 }
 
 .sect-bg-3 {
