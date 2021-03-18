@@ -4,6 +4,10 @@ body{
   font-family: 'Rubik', sans-serif;
   color: #F2F2FF;
 }
+.row:before, .row:after {
+  display: none;
+  content: none;
+}
 .header {
   width: 100%;
   height: 118px;
@@ -74,6 +78,7 @@ button.header-btn {
   text-decoration-line: underline;
   text-transform: uppercase;
   color: #F6255A;
+  color: #F2F2FF;
 
 }
 
@@ -127,6 +132,7 @@ button.header-btn {
   bottom: 10px;
   left: -6px;
   z-index: 10;
+  color: #F2F2FF;
 }
 
 .logoanime {
@@ -210,6 +216,7 @@ button.header-btn {
   display: flex;
   align-items: flex-end;
   padding: 50px 50px 0 0;
+  color: #F2F2FF;
 
 }
 
@@ -218,6 +225,7 @@ button.header-btn {
   font-size: 24px;
   line-height: 28px;
   margin: 20px 0 55px;
+  color: #F2F2FF;
 }
 .data-of-conf {
   font-weight: bold;
@@ -226,6 +234,7 @@ button.header-btn {
   display: inline-flex;
   align-items: center;
   margin-bottom: 20px;
+  color: #F2F2FF;
 
   span {
 
@@ -250,6 +259,7 @@ button.header-btn {
   margin-top: 30px;
 
     .primer-btn {
+      color: #F2F2FF;
       font-weight: 500;
       font-size: 18px;
       line-height: 21px;
@@ -287,6 +297,7 @@ button.header-btn {
   font-size: 38px;
   font-weight: 700;
   margin: 0 0 80px 0;
+  color: #F2F2FF;
 }
 .useg-bloc{
   width: 570px;
@@ -299,6 +310,7 @@ button.header-btn {
   display: flex;
   justify-content: center;
   align-items: center;
+  color: #F2F2FF;
 }
 .useg-bloc:nth-child(2n +1){
   margin-right: 30px;
@@ -315,6 +327,7 @@ button.header-btn {
   display: flex;
   align-items: center;
   margin-left: 30px;
+  color: #F2F2FF;
 
   &:before {
     content: url("../img/check-square.png");
@@ -354,6 +367,7 @@ button.header-btn {
     font-size: 16px;
     margin-left: 25px;
     width: calc(100% - 31px + 88px);
+    color: #F2F2FF;
 
   }
 
@@ -373,6 +387,7 @@ button.header-btn {
     font-size: 38px;
     font-weight: 700;
     margin: 140px 0 80px 0;
+    color: #F2F2FF;
   }
 }
 
@@ -405,8 +420,8 @@ button.header-btn {
 }
 
 .carousel-indicators {
-  bottom: -50px;
-  left: 5%;
+  bottom: -40px !important;
+  left: 20px !important;
 
   li {
 
@@ -424,7 +439,7 @@ button.header-btn {
   .active {
     width: 12px;
     height: 12px;
-    background-color: #F6255A;
+    background-color: #F6255A!important;
     transform: rotate(-45deg);
     border-radius: 2px;
   }
@@ -432,6 +447,7 @@ button.header-btn {
 }
 
 .about-btn{
+  color: #F2F2FF;
   font-weight: 500;
   font-size: 18px;
   line-height: 21px;
@@ -719,6 +735,8 @@ div#regModal {
   width: 100%;
   height: 100%;
   background: #172575;
+  border:1px solid  #172575;
+
   border-radius: 20px;
   padding: 80px 40px;
   text-align: left;
@@ -736,7 +754,6 @@ div#regModal {
 
 .bloc-person:hover .info{
   transform: scaleX(1)
-
 }
 
 .sect-bg-6{
@@ -765,8 +782,9 @@ div#regModal {
     left: 70px;
     top: 50px;
   }
+
   img.logo-bgs {
-    width: 230px;
+    width: 232px;
     height: 207px;
   }
   img.text-logo{
@@ -775,16 +793,9 @@ div#regModal {
   }
 }
 
+.sect-bg-7{
 
-
-
-
-
-
-
-
-
-
+}
 
 
 
@@ -881,6 +892,9 @@ div#regModal {
   .section_container {
     height: auto;
     padding-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
 
@@ -1288,7 +1302,9 @@ div#regModal {
   }
 
   p.h3-section-title {
-    text-align: center;
+      text-align: center;
+      position: relative;
+      z-index: 2;
   }
 
   .col-t {
@@ -1466,6 +1482,38 @@ div#regModal {
   .col-md-6.col-sm-12.program-bloc-1 {
     padding: 15px;
   }
+  .lay-logo-bottom {
+    position: relative;
+    left: 0;
+    top: 40px;
+    z-index: 0;
+  }
+  img.logo-bgs {
+    bottom: 0;
+    position: absolute;
+    left: 60px;
+    top: -120px;
+    z-index: 0;
+  }
+  .lay-logo-bottom {
+    margin-bottom: 0;
+  }
+  .lay-logo-bottom {
+    height: 0;
+  }
+  img.text-logo{
+    display: none;
+  }
+  img.logo-bgs {
+    width: 79px;
+    height: 71px;
+  }
+  .lay-logo-bottom img.logo-bgs {
+    width: 79px;
+    height: 71px;
+  }
+
+
 }
 
 /*******************************      XS       ***********************/

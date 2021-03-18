@@ -4,6 +4,11 @@ body {
   color: #F2F2FF;
 }
 
+.row:before, .row:after {
+  display: none;
+  content: none;
+}
+
 .header {
   width: 100%;
   height: 118px;
@@ -68,6 +73,7 @@ button.header-btn {
   text-decoration-line: underline;
   text-transform: uppercase;
   color: #F6255A;
+  color: #F2F2FF;
 }
 
 .burger {
@@ -120,6 +126,7 @@ button.header-btn {
   bottom: 10px;
   left: -6px;
   z-index: 10;
+  color: #F2F2FF;
 }
 
 .logoanime {
@@ -190,6 +197,7 @@ button.header-btn {
   display: flex;
   align-items: flex-end;
   padding: 50px 50px 0 0;
+  color: #F2F2FF;
 }
 
 .eng_pretitle {
@@ -197,6 +205,7 @@ button.header-btn {
   font-size: 24px;
   line-height: 28px;
   margin: 20px 0 55px;
+  color: #F2F2FF;
 }
 
 .data-of-conf {
@@ -206,6 +215,7 @@ button.header-btn {
   display: inline-flex;
   align-items: center;
   margin-bottom: 20px;
+  color: #F2F2FF;
 }
 .data-of-conf span {
   display: inline-flex;
@@ -227,6 +237,7 @@ button.header-btn {
   margin-top: 30px;
 }
 .btn-s1_w .primer-btn {
+  color: #F2F2FF;
   font-weight: 500;
   font-size: 18px;
   line-height: 21px;
@@ -260,6 +271,7 @@ button.header-btn {
   font-size: 38px;
   font-weight: 700;
   margin: 0 0 80px 0;
+  color: #F2F2FF;
 }
 
 .useg-bloc {
@@ -273,6 +285,7 @@ button.header-btn {
   display: flex;
   justify-content: center;
   align-items: center;
+  color: #F2F2FF;
 }
 
 .useg-bloc:nth-child(2n+1) {
@@ -291,6 +304,7 @@ button.header-btn {
   display: flex;
   align-items: center;
   margin-left: 30px;
+  color: #F2F2FF;
 }
 .useg:before {
   content: url("../img/check-square.png");
@@ -324,6 +338,7 @@ button.header-btn {
   font-size: 16px;
   margin-left: 25px;
   width: calc(100% - 31px + 88px);
+  color: #F2F2FF;
 }
 
 .sect-bg-4 {
@@ -339,6 +354,7 @@ button.header-btn {
   font-size: 38px;
   font-weight: 700;
   margin: 140px 0 80px 0;
+  color: #F2F2FF;
 }
 
 .about_text-container {
@@ -371,8 +387,8 @@ button.header-btn {
 }
 
 .carousel-indicators {
-  bottom: -50px;
-  left: 5%;
+  bottom: -40px !important;
+  left: 20px !important;
 }
 .carousel-indicators li {
   display: inline-block;
@@ -388,12 +404,13 @@ button.header-btn {
 .carousel-indicators .active {
   width: 12px;
   height: 12px;
-  background-color: #F6255A;
+  background-color: #F6255A !important;
   transform: rotate(-45deg);
   border-radius: 2px;
 }
 
 .about-btn {
+  color: #F2F2FF;
   font-weight: 500;
   font-size: 18px;
   line-height: 21px;
@@ -650,6 +667,7 @@ p.confi:before {
   width: 100%;
   height: 100%;
   background: #172575;
+  border: 1px solid #172575;
   border-radius: 20px;
   padding: 80px 40px;
   text-align: left;
@@ -692,7 +710,7 @@ p.confi:before {
   top: 50px;
 }
 .lay-logo-bottom img.logo-bgs {
-  width: 230px;
+  width: 232px;
   height: 207px;
 }
 .lay-logo-bottom img.text-logo {
@@ -777,6 +795,9 @@ p.confi:before {
   .section_container {
     height: auto;
     padding-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   p.h3-section-title {
@@ -1164,6 +1185,8 @@ p.confi:before {
 
   p.h3-section-title {
     text-align: center;
+    position: relative;
+    z-index: 2;
   }
 
   .col-t {
@@ -1330,6 +1353,43 @@ p.confi:before {
 
   .col-md-6.col-sm-12.program-bloc-1 {
     padding: 15px;
+  }
+
+  .lay-logo-bottom {
+    position: relative;
+    left: 0;
+    top: 40px;
+    z-index: 0;
+  }
+
+  img.logo-bgs {
+    bottom: 0;
+    position: absolute;
+    left: 60px;
+    top: -120px;
+    z-index: 0;
+  }
+
+  .lay-logo-bottom {
+    margin-bottom: 0;
+  }
+
+  .lay-logo-bottom {
+    height: 0;
+  }
+
+  img.text-logo {
+    display: none;
+  }
+
+  img.logo-bgs {
+    width: 79px;
+    height: 71px;
+  }
+
+  .lay-logo-bottom img.logo-bgs {
+    width: 79px;
+    height: 71px;
   }
 }
 /*******************************      XS       ***********************/
