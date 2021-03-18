@@ -1,0 +1,53 @@
+$basic-font: 'Rubik', sans-serif;
+
+$color-1:#F2F2FF;
+$color-2: #F6255A;
+$color-3: #0F1435;
+$color-4: #383838;
+
+$text-size-1: 12px;
+$text-size-2: 13px;
+$text-size-3: 16px;
+$width:45px;
+
+$footer-height:80px;
+$header-height:70px;
+
+$header-color: #40454a;
+$section-color:#383838;
+$footer-color: #4e555b;
+
+$radius:4px;
+$rotate: rotate(45deg);
+
+@mixin dot{
+    width: 16px;
+    height: 16px;
+}
+
+@mixin display-flex{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+@mixin display-flex-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@mixin display-flex-3{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+@mixin display-flex-4{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
