@@ -391,11 +391,11 @@ button.header-btn {
   margin: 1px 7px;
   text-indent: -999px;
   cursor: pointer;
-  border: 1px solid #fff;
+  border: 1px solid #fff !important;
   width: 8px;
   height: 8px;
-  background: #C4C4C4;
-  border-radius: 2px;
+  background: #C4C4C4 !important;
+  border-radius: 2px !important;
 }
 .carousel-indicators .active {
   width: 12px;
@@ -712,6 +712,74 @@ p.confi:before {
 .lay-logo-bottom img.text-logo {
   width: 205px;
   height: 66px;
+}
+
+.spikers-w {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 130px;
+}
+
+.partners_w .spiker_box {
+  max-width: 360px;
+  position: relative;
+  padding: 40px;
+}
+
+.spiker_box_w {
+  position: relative;
+  height: calc(100% - 50px);
+  margin-bottom: 50px;
+}
+
+.spiker_box {
+  height: 100%;
+}
+
+.spiker_box {
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.35);
+  max-width: 265px;
+  padding: 15px;
+  margin: 25px 0;
+}
+
+.spiker_photo {
+  width: 288px;
+  height: 178px;
+  object-fit: cover;
+  object-position: center;
+  margin: 0 auto;
+  background: #C4C4C4;
+}
+
+.partner-title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 140%;
+  color: #0F1435;
+  margin: 24px 0 12px;
+}
+
+.partner-text {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 140%;
+  color: #0F1435;
+}
+.partner-text span {
+  color: #F6255A;
+}
+
+.sect-bg-9 {
+  background-image: url("../img/bg-10.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  min-height: 1129px;
+  object-fit: contain;
 }
 
 /*******************************      MEDIA       ***********************/
