@@ -27,6 +27,7 @@ img.header-logo {
   align-items: center;
 }
 .header-contact a {
+  color: #F2F2FF;
   margin-right: 49px;
   transition: color 0.3s;
   font-style: normal;
@@ -664,6 +665,39 @@ p.confi:before {
 
 .bloc-person:hover .info {
   transform: scaleX(1);
+}
+
+.sect-bg-6 {
+  background-image: url("../img/bg-6.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  min-height: 960px;
+  object-fit: contain;
+}
+
+.sec-7-content > .row:first-child {
+  padding-top: 200px;
+}
+
+.lay-logo-bottom {
+  position: relative;
+  left: 307px;
+  top: 40px;
+  z-index: 2;
+}
+.lay-logo-bottom img.text-logo {
+  position: absolute;
+  left: 70px;
+  top: 50px;
+}
+.lay-logo-bottom img.logo-bgs {
+  width: 230px;
+  height: 207px;
+}
+.lay-logo-bottom img.text-logo {
+  width: 205px;
+  height: 66px;
 }
 
 /*******************************      MEDIA       ***********************/

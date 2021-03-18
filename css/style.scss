@@ -27,7 +27,9 @@ img.header-logo {
   display: flex;
   align-items: center;
 
+
   a {
+    color: #F2F2FF;
     margin-right: 49px;
     transition: color 0.3s;
     font-style: normal;
@@ -736,6 +738,44 @@ div#regModal {
   transform: scaleX(1)
 
 }
+
+.sect-bg-6{
+  background-image: url("../img/bg-6.png");
+  background-position:center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  min-height: 960px;
+  object-fit: contain;
+
+
+
+}
+
+.sec-7-content > .row:first-child {
+  padding-top: 200px;
+}
+.lay-logo-bottom {
+  position: relative;
+  left: 307px;
+  top: 40px;
+  z-index: 2;
+
+  img.text-logo {
+    position: absolute;
+    left: 70px;
+    top: 50px;
+  }
+  img.logo-bgs {
+    width: 230px;
+    height: 207px;
+  }
+  img.text-logo{
+    width: 205px;
+    height: 66px;
+  }
+}
+
+
 
 
 
