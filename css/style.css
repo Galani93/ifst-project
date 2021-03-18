@@ -4,6 +4,10 @@ body {
   color: #F2F2FF;
 }
 
+.section {
+  background: #010318;
+}
+
 .row:before, .row:after {
   display: none;
   content: none;
@@ -74,7 +78,6 @@ button.header-btn {
   text-decoration-line: underline;
   text-transform: uppercase;
   color: #F6255A;
-  color: #F2F2FF;
 }
 
 .burger {
@@ -92,10 +95,6 @@ button.header-btn {
 
 .burger, .mobile_data_w, .prog_col.hide {
   display: none;
-}
-
-.section {
-  background: #010318;
 }
 
 .section_container {
@@ -347,10 +346,14 @@ button.header-btn {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 860px;
   object-fit: cover;
 }
 
+.sec-4-content {
+  background: rgba(1, 3, 24, 0.6);
+  width: 100%;
+  height: 100%;
+}
 .sec-4-content .h3-section-title {
   font-size: 38px;
   font-weight: 700;
@@ -366,6 +369,7 @@ button.header-btn {
   justify-content: space-between;
   align-items: center;
   padding: 60px 90px;
+  margin-bottom: 140px;
 }
 
 .about-text-content p {
@@ -626,7 +630,7 @@ p.confi:before {
   flex-wrap: wrap;
 }
 .sec-6-content .bloc-person {
-  padding: 40px;
+  padding: 34px 40px;
   margin: 15px 0;
   background: #F2F2FF;
   border-radius: 20px;
@@ -728,7 +732,7 @@ p.confi:before {
 .partners_w .spiker_box {
   max-width: 360px;
   position: relative;
-  padding: 40px;
+  padding: 40px 40px 0;
 }
 
 .spiker_box_w {
@@ -751,7 +755,6 @@ p.confi:before {
 }
 
 .spiker_photo {
-  width: 288px;
   height: 178px;
   object-fit: cover;
   object-position: center;
