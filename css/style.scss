@@ -858,6 +858,24 @@ div#regModal {
   background-repeat: no-repeat;
   width: 696.61px;
   height: 809.2px;
+}
+.contact-regtangl{
+  background-image: url("../img/logo-bg.png");
+  background-size: contain;
+  background-position: top right;
+  background-repeat: no-repeat;
+  width: 580.23px;
+  height: 674.01px;
+  position: relative;
+  top: -300px;
+}
+.sect-bg-11{
+  background-image: url("../img/contact.png");
+  background-position:center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  object-fit: contain;
+  height: 884px;
 
 }
 .sec-10-content{
@@ -1059,9 +1077,88 @@ div#regModal {
   transform: rotate(180deg);
 }
 
+.logos-w {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-bottom: 240px;
+}
+.inner-logos {
+  width: calc(25% - 20px);
+  margin: 20px 8px;
+}
+.inner-logos img {
+  display: block;
+  margin: 0 auto;
+}
+.sec-14-content{
+  .h3-section-title{
+    margin: 246px 0 16px;
+  }
+  .section-text{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 36px;
+    color: #F2F2FF;
+    margin-bottom: 28px;
+  }
 
 
+}
+.background{
+  input{
+    width: 470px;
+    height: 63px;
+    background: #F2F2FF;
+    border-radius: 8px;
+    font-size: 14px;
+    line-height: 36px;
+    padding: 0 20px;
+    color: #979BB3;
+    border:0;
+    margin-top: 16px;
+  }
+  &::placeholder{
 
+  }
+}
+.form-submit{
+  width: 470px;
+  height: 63px;
+  background: #F6255A;
+  color: #F2F2FF;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  text-transform: uppercase;
+  border:0;
+  margin: 16px 0;
+
+}
+
+.has-feedback {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 140%;
+  display: flex;
+  align-items: center;
+  color: #F2F2FF;
+
+  a {
+    color: #F6255A;;
+  }
+  input[type="checkbox"] {
+    margin:0 15px 0 0!important;
+  }
+}
+.contact-bloc{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
 
 /*******************************      MEDIA       ***********************/
 
@@ -1777,7 +1874,15 @@ div#regModal {
     justify-content: center;
     flex-wrap: wrap;
   }
-
+  .inner-logos {
+    width: 60px;
+    height: 24px;
+  }
+  .accordion  {
+    .mb-0 , .card-body{
+      font-size: 14px;
+    }
+  }
 }
 
 /*******************************      XS       ***********************/
