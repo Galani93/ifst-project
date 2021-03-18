@@ -6567,8 +6567,7 @@ button.close {
 .modal-header:after,
 .modal-footer:before,
 .modal-footer:after {
-  display: table;
-  content: " ";
+
 }
 .clearfix:after,
 .dl-horizontal dd:after,

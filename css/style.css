@@ -286,7 +286,6 @@ button.header-btn {
 .useg {
   font-size: 18px;
   font-weight: 300;
-  font-size: 18px;
   line-height: 140%;
   display: flex;
   align-items: center;
@@ -552,10 +551,9 @@ p.confi:before {
   align-items: center;
 }
 .program-bloc .program-bloc-1 {
-  width: 570px;
-  height: 715px;
   background: #F2F2FF;
   border-radius: 20px;
+  padding: 80px;
 }
 .program-bloc .program-bloc-1:first-child {
   margin-right: 30px;
@@ -577,7 +575,7 @@ p.confi:before {
   letter-spacing: 0.05em;
   text-transform: uppercase;
   color: #F6255A;
-  margin: 80px;
+  padding-bottom: 40px;
 }
 
 .bloc-name h4 {
@@ -592,7 +590,80 @@ p.confi:before {
   font-weight: normal;
   font-size: 18px;
   line-height: 140%;
+  padding-top: 10px;
   color: #000000;
+}
+
+.row.mb-2 {
+  margin-bottom: 24px;
+}
+
+.sec-6-content .h3-section-title {
+  margin: 200px 0 80px;
+}
+.sec-6-content .person {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.sec-6-content .bloc-person {
+  padding: 40px;
+  margin: 15px 0;
+  background: #F2F2FF;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 270px;
+  position: relative;
+  overflow: hidden;
+  transition: transform 2s;
+  cursor: pointer;
+}
+.sec-6-content .bloc-person .icon-person {
+  width: 128px;
+  height: 128px;
+}
+.sec-6-content .bloc-person .icon-person img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.sec-6-content .bloc-person h2 {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  color: #0F1435;
+  padding: 15px;
+}
+.sec-6-content .bloc-person p {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 140%;
+  color: #000000;
+}
+
+.bloc-person .info {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #172575;
+  border-radius: 20px;
+  padding: 80px 40px;
+  text-align: left;
+  transform: scaleX(0);
+  transition: 0.6s;
+}
+.bloc-person .info p {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 140%;
+  color: #F2F2FF;
+}
+
+.bloc-person:hover .info {
+  transform: scaleX(1);
 }
 
 /*******************************      MEDIA       ***********************/
@@ -966,6 +1037,20 @@ p.confi:before {
   .sec-2-content .row.d-flex .useg:before {
     margin: 0 15px 0 3px;
   }
+
+  .row.program-bloc {
+    flex-direction: column;
+    margin: 10px;
+  }
+  .row.program-bloc .col-md-6.col-sm-12.program-bloc-1 {
+    margin: 10px auto !important;
+  }
+
+  .sec-6-content .person {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
 }
 /*******************************      SM       ***********************/
 @media screen and (max-width: 768px) {
@@ -1207,6 +1292,10 @@ p.confi:before {
 
   div#regModal .modal-header {
     padding: 40px 20px 0;
+  }
+
+  .col-md-6.col-sm-12.program-bloc-1 {
+    padding: 15px;
   }
 }
 /*******************************      XS       ***********************/
