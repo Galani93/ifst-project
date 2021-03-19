@@ -1262,6 +1262,7 @@ p.confi {
 }
 
 .accordion {
+  width: 100%;
 
   .card {
     border-top: 1px solid #333C72;
@@ -1535,7 +1536,8 @@ p.confi {
   .section_container {
     height: auto;
     padding-bottom: 40px;
-    @include display-flex-2;
+    display: flex;
+    justify-content: center;
   }
 
 
@@ -1600,6 +1602,53 @@ p.confi {
   .section-13-container {
     padding: 50px 0;
   }
+  .lay-logo-bottom {
+    position: relative;
+    left: 200px;
+    top: 40px;
+    z-index: 2;
+    margin: 0;
+  }
+  .carousel-control.right {
+    right: 0;
+    left: -90px;
+  }
+  .carousel-control.left {
+    left: -230px;
+    right: auto;
+  }
+  .logo-price img {
+    width: 250px;
+    height: 80px;
+  }
+  .inner-logos {
+    width: calc(33% - 20px);
+    margin: 20px 8px;
+  }
+  .contact-regtangl {
+    width: 300px;
+    height: 400px;
+    position: relative;
+    top: -130px;
+    z-index: 0;
+  }
+  .sect-bg-11 {
+    background-position: top center;
+    height: 475px;
+  }
+  .sect-bg-6 {
+    background-position: top center;
+  }
+  .sec-14-content .h3-section-title {
+    margin: 20px 0;
+  }
+  .sec-7-content > .row:first-child {
+    padding-top: 20px;
+  }
+  .logos-w{
+    padding-bottom: 0;
+  }
+
 }
 
 @media screen and (min-height: 1100px) {
@@ -1643,6 +1692,9 @@ p.confi {
   .section-10-container.container .panel-group, .logos-w {
     margin: 100px 0;
   }
+  .useg-bloc:nth-child(2n+1){
+    margin-right: 0;
+  }
 }
 
 /*******************************      MD       ***********************/
@@ -1682,7 +1734,9 @@ p.confi {
 
   footer {
     img {
-      margin: 0 auto;
+      display: block;
+      width: 100px;
+      height: 32px;
       display: block;
     }
 
@@ -1857,6 +1911,7 @@ p.confi {
     flex-wrap: wrap;
 
   }
+
 }
 
 /*******************************      SM       ***********************/
@@ -2171,6 +2226,53 @@ p.confi {
       font-size: 14px;
     }
   }
+  .container.section_container {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .carousel-control.right {
+    right: 40px !important;
+    left: auto;
+  }
+  .logo-price img {
+    display: none;
+  }
+  .sec-12-content .h3-section-title {
+    margin: 10px 0;
+  }
+  .contact-regtangl {
+    display: none;
+  }
+  .background input {
+    width: 320px;
+  }
+  .sect-bg-6 {
+    background-position: center center;
+    background-size: cover;
+    min-height: 760px;
+  }
+  .sect-bg-11{
+    background-size: cover;
+  }
+  .footer .container-foo.container {
+    padding: 20px 0;
+
+    .row {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+
+      .col-md-4.col-lg-4, .col-md-2.col-lg-2, .col-md-3.col-lg-3, .bottom-foo-line {
+        text-align: left;
+        margin-left: 15px;
+      }
+    }
+  }
+
+
 }
 
 /*******************************      XS       ***********************/

@@ -1276,6 +1276,9 @@ p.confi:before {
   background: linear-gradient(#02092F 18.04%, #020530 23.22%);
 }
 
+.accordion {
+  width: 100%;
+}
 .accordion .card {
   border-top: 1px solid #333C72;
   padding: 32px 0;
@@ -1519,7 +1522,6 @@ p.confi:before {
     padding-bottom: 40px;
     display: flex;
     justify-content: center;
-    align-items: center;
   }
 
   p.h3-section-title {
@@ -1580,6 +1582,63 @@ p.confi:before {
   .section-13-container {
     padding: 50px 0;
   }
+
+  .lay-logo-bottom {
+    position: relative;
+    left: 200px;
+    top: 40px;
+    z-index: 2;
+    margin: 0;
+  }
+
+  .carousel-control.right {
+    right: 0;
+    left: -90px;
+  }
+
+  .carousel-control.left {
+    left: -230px;
+    right: auto;
+  }
+
+  .logo-price img {
+    width: 250px;
+    height: 80px;
+  }
+
+  .inner-logos {
+    width: calc(33% - 20px);
+    margin: 20px 8px;
+  }
+
+  .contact-regtangl {
+    width: 300px;
+    height: 400px;
+    position: relative;
+    top: -130px;
+    z-index: 0;
+  }
+
+  .sect-bg-11 {
+    background-position: top center;
+    height: 475px;
+  }
+
+  .sect-bg-6 {
+    background-position: top center;
+  }
+
+  .sec-14-content .h3-section-title {
+    margin: 20px 0;
+  }
+
+  .sec-7-content > .row:first-child {
+    padding-top: 20px;
+  }
+
+  .logos-w {
+    padding-bottom: 0;
+  }
 }
 @media screen and (min-height: 1100px) {
   .container.no-padding {
@@ -1627,6 +1686,10 @@ p.confi:before {
   .section-10-container.container .panel-group, .logos-w {
     margin: 100px 0;
   }
+
+  .useg-bloc:nth-child(2n+1) {
+    margin-right: 0;
+  }
 }
 /*******************************      MD       ***********************/
 @media screen and (max-width: 992px) {
@@ -1665,7 +1728,9 @@ p.confi:before {
     text-align: center;
   }
   footer img {
-    margin: 0 auto;
+    display: block;
+    width: 100px;
+    height: 32px;
     display: block;
   }
 
@@ -2135,6 +2200,58 @@ p.confi:before {
 
   .accordion .mb-0, .accordion .card-body {
     font-size: 14px;
+  }
+
+  .container.section_container {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .carousel-control.right {
+    right: 40px !important;
+    left: auto;
+  }
+
+  .logo-price img {
+    display: none;
+  }
+
+  .sec-12-content .h3-section-title {
+    margin: 10px 0;
+  }
+
+  .contact-regtangl {
+    display: none;
+  }
+
+  .background input {
+    width: 320px;
+  }
+
+  .sect-bg-6 {
+    background-position: center center;
+    background-size: cover;
+    min-height: 760px;
+  }
+
+  .sect-bg-11 {
+    background-size: cover;
+  }
+
+  .footer .container-foo.container {
+    padding: 20px 0;
+  }
+  .footer .container-foo.container .row {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .footer .container-foo.container .row .col-md-4.col-lg-4, .footer .container-foo.container .row .col-md-2.col-lg-2, .footer .container-foo.container .row .col-md-3.col-lg-3, .footer .container-foo.container .row .bottom-foo-line {
+    text-align: left;
+    margin-left: 15px;
   }
 }
 /*******************************      XS       ***********************/
