@@ -426,8 +426,8 @@ button.header-btn {
 }
 
 .carousel-indicators {
-  bottom: -40px !important;
-  left: 20px !important;
+  bottom: -40px;
+  left: 20px;
 
   li {
 
@@ -511,7 +511,7 @@ button.header-btn {
 }
 
 .active > div:first-child {
-  display: block;
+  display: flex;
 }
 
 /*xs*/
@@ -1317,143 +1317,148 @@ p.confi {
 
 .inner-logos img {
   display: block;
-  margin: 0 auto;
+  width: 100%;
+  height: auto;
+
 }
 
 .sec-14-content {
-  .h3-section-title {
-    margin: 246px 0 16px;
-  }
+.h3-section-title {
+  margin: 246px 0 16px;
+}
 
-  .section-text {
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 36px;
-    color: $color-1;
-    margin-bottom: 28px;
-  }
+.section-text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 36px;
+  color: $color-1;
+  margin-bottom: 28px;
+}
 
 
 }
 
 .background {
-  input {
-    width: 470px;
-    height: 63px;
-    background: $color-1;
-    border-radius: 8px;
-    font-size: 14px;
-    line-height: 36px;
-    padding: 0 20px;
-    color: #979BB3;
-    border: 0;
-    margin-top: 16px;
-  }
+input {
+  width: 470px;
+  height: 63px;
+  background: $color-1;
+  border-radius: 8px;
+  font-size: 14px;
+  line-height: 36px;
+  padding: 0 20px;
+  color: #979BB3;
+  border: 0;
+  margin-top: 16px;
+}
 
-  &::placeholder {
+&::placeholder {
 
-  }
+}
 }
 
 .form-submit {
-  width: 470px;
-  height: 63px;
-  background: $color-2;
-  color: $color-1;
-  border-radius: 8px;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 21px;
-  text-transform: uppercase;
-  border: 0;
-  margin: 16px 0;
+width: 470px;
+height: 63px;
+background: $color-2;
+color: $color-1;
+border-radius: 8px;
+font-weight: 500;
+font-size: 18px;
+line-height: 21px;
+text-transform: uppercase;
+border: 0;
+margin: 16px 0;
 
 }
 
 .has-feedback {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 140%;
-  display: flex;
-  align-items: center;
-  color: $color-1;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 140%;
+display: flex;
+align-items: center;
+color: $color-1;
 
-  a {
-    color: $color-2;;
-  }
+a {
+  color: $color-2;;
+}
 
-  input[type="checkbox"] {
-    margin: 0 15px 0 0 !important;
-  }
+input[type="checkbox"] {
+  margin: 0 15px 0 0 !important;
+}
 }
 
 .contact-bloc {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
+display: flex;
+justify-content: space-between;
+align-items: flex-start;
 }
 
 .footer {
-  background: #040B3C;
-  width: 100%;
+background: #040B3C;
+width: 100%;
 
-  .container-foo.container {
-    padding: 90px 0;
-    min-height: 379px;
-  }
+.container-foo.container {
+  padding: 90px 0;
+  min-height: 379px;
+}
 
-  .foo-title {
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 30px;
-    color: $color-1;
-    margin-bottom: 24px;
-  }
+.foo-title {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 30px;
+  color: $color-1;
+  margin-bottom: 24px;
+}
 
-  .tel-foo a {
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 140%;
-    color: $color-1;
-    padding: 6px 0;
-  }
+.tel-foo a {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 140%;
+  color: $color-1;
+  padding: 6px 0;
+}
 
-  .adress {
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 140%;
-    color: $color-1;
-    padding: 26px 0;
-    width: 231px;
-  }
+.adress {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 140%;
+  color: $color-1;
+  padding: 26px 0;
+  width: 231px;
+}
 }
 
 .bottom-foo-line {
-  align-items: center;
-  font-style: normal;
-  font-weight: 300;
-  font-size: 14px;
-  line-height: 20px;
-  color: $color-1;
+align-items: center;
+font-style: normal;
+font-weight: 300;
+font-size: 14px;
+line-height: 20px;
+color: $color-1;
 
-  span {
-    font-weight: bold;
-  }
+span {
+  font-weight: bold;
+}
 }
 
 .social-flex {
-  display: flex;
+display: flex;
 
-  .square i {
-    width: 22px;
-    height: 16px;
-    font-size: 20px;
-    margin: 0 7px;
-    color: $color-1;
-  }
+.square i {
+  width: 22px;
+  height: 16px;
+  font-size: 20px;
+  margin: 0 7px;
+  color: $color-1;
+}
 
+}
+.modile-slider{
+  display: none;
 }
 
 /*******************************      MEDIA       ***********************/
@@ -1621,10 +1626,7 @@ p.confi {
     width: 250px;
     height: 80px;
   }
-  .inner-logos {
-    width: calc(33% - 20px);
-    margin: 20px 8px;
-  }
+
   .contact-regtangl {
     width: 300px;
     height: 400px;
@@ -1867,7 +1869,16 @@ p.confi {
       left: 10%;
     }
   }
+  .modile-slider {
+    .bs-example {
+      padding-bottom: 45px;
 
+      .carousel-indicators {
+        bottom: -50px;
+        left: 40%;
+      }
+    }
+  }
   .sec-2-content {
     .row.d-flex {
       justify-content: center;
@@ -1910,6 +1921,9 @@ p.confi {
     justify-content: center;
     flex-wrap: wrap;
 
+  }
+  .modile-slider{
+    display: block;
   }
 
 }
@@ -2134,14 +2148,7 @@ p.confi {
     }
   }
 
-  .inner-logos {
-    width: 100%;
-    display: none;
 
-    &:nth-child(1), &:nth-child(2), &:nth-child(3) {
-      display: flex;
-    }
-  }
 
   .section-13-container h2.h2_title {
     font-size: 24px;
@@ -2217,9 +2224,12 @@ p.confi {
     justify-content: center;
     flex-wrap: wrap;
   }
-  .inner-logos {
+
+  .inner-logos img {
+    display: block;
     width: 60px;
-    height: 24px;
+    height: auto;
+
   }
   .accordion {
     .mb-0, .card-body {

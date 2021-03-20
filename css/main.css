@@ -502,8 +502,8 @@ button.header-btn {
 }
 
 .carousel-indicators {
-  bottom: -40px !important;
-  left: 20px !important;
+  bottom: -40px;
+  left: 20px;
 }
 .carousel-indicators li {
   display: inline-block;
@@ -581,7 +581,7 @@ button.header-btn {
 }
 
 .active > div:first-child {
-  display: block;
+  display: flex;
 }
 
 /*xs*/
@@ -1326,7 +1326,8 @@ p.confi:before {
 
 .inner-logos img {
   display: block;
-  margin: 0 auto;
+  width: 100%;
+  height: auto;
 }
 
 .sec-14-content .h3-section-title {
@@ -1441,6 +1442,10 @@ p.confi:before {
   font-size: 20px;
   margin: 0 7px;
   color: #F2F2FF;
+}
+
+.modile-slider {
+  display: none;
 }
 
 /*******************************      MEDIA       ***********************/
@@ -1604,11 +1609,6 @@ p.confi:before {
   .logo-price img {
     width: 250px;
     height: 80px;
-  }
-
-  .inner-logos {
-    width: calc(33% - 20px);
-    margin: 20px 8px;
   }
 
   .contact-regtangl {
@@ -1857,6 +1857,14 @@ p.confi:before {
     left: 10%;
   }
 
+  .modile-slider .bs-example {
+    padding-bottom: 45px;
+  }
+  .modile-slider .bs-example .carousel-indicators {
+    bottom: -50px;
+    left: 40%;
+  }
+
   .sec-2-content .row.d-flex {
     justify-content: center;
     align-items: center;
@@ -1892,6 +1900,10 @@ p.confi:before {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+  }
+
+  .modile-slider {
+    display: block;
   }
 }
 /*******************************      SM       ***********************/
@@ -2101,14 +2113,6 @@ p.confi:before {
     padding: 10px 15px 15px 15px;
   }
 
-  .inner-logos {
-    width: 100%;
-    display: none;
-  }
-  .inner-logos:nth-child(1), .inner-logos:nth-child(2), .inner-logos:nth-child(3) {
-    display: flex;
-  }
-
   .section-13-container h2.h2_title {
     font-size: 24px;
   }
@@ -2193,9 +2197,10 @@ p.confi:before {
     flex-wrap: wrap;
   }
 
-  .inner-logos {
+  .inner-logos img {
+    display: block;
     width: 60px;
-    height: 24px;
+    height: auto;
   }
 
   .accordion .mb-0, .accordion .card-body {

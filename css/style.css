@@ -830,7 +830,7 @@ p.confi:before {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 270px;
+  width: 270px!important;
   position: relative;
   overflow: hidden;
   transition: transform 2s;
