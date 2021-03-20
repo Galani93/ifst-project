@@ -34,41 +34,6 @@ html, body {
   -webkit-text-size-adjust: 100%;
 }
 
-@media (min-width: 576px) {
-  .container {
-    max-width: 570px;
-    margin: 0 auto;
-    position: relative;
-  }
-}
-@media (min-width: 768px) {
-  .container {
-    max-width: 720px;
-    margin: 0 auto;
-    position: relative;
-  }
-}
-@media (min-width: 992px) {
-  .container {
-    max-width: 990px;
-    margin: 0 auto;
-    position: relative;
-  }
-}
-@media (min-width: 1200px) {
-  .container {
-    max-width: 1170px;
-    margin: 0 auto;
-    position: relative;
-  }
-}
-@media (min-width: 1400px) {
-  .container {
-    max-width: 1170px;
-    margin: 0 auto;
-    position: relative;
-  }
-}
 input, button, textarea {
   font-family: inherit;
 }

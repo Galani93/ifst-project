@@ -35,41 +35,6 @@ html, body {
   -webkit-text-size-adjust: 100%;
 }
 
-@media (min-width: 576px) {
-  .container {
-    max-width: 570px;
-    margin: 0 auto;
-    position: relative;
-  }
-}
-@media (min-width: 768px) {
-  .container {
-    max-width: 720px;
-    margin: 0 auto;
-    position: relative;
-  }
-}
-@media (min-width: 992px) {
-  .container {
-    max-width: 990px;
-    margin: 0 auto;
-    position: relative;
-  }
-}
-@media (min-width: 1200px) {
-  .container {
-    max-width: 1170px;
-    margin: 0 auto;
-    position: relative;
-  }
-}
-@media (min-width: 1400px) {
-  .container {
-    max-width: 1170px;
-    margin: 0 auto;
-    position: relative;
-  }
-}
 input, button, textarea {
   font-family: inherit;
 }
@@ -501,10 +466,11 @@ button.header-btn {
   margin-top: 20px;
 }
 
-.carousel-indicators {
+#myCarousel .carousel-indicators {
   bottom: -40px;
   left: 20px;
 }
+
 .carousel-indicators li {
   display: inline-block;
   margin: 1px 7px;
@@ -560,7 +526,7 @@ button.header-btn {
 .carousel-control.right {
   margin-right: 40px;
   margin-left: 32px;
-  background-image: none;
+  background-image: none !important;
   opacity: 1;
 }
 
@@ -786,6 +752,8 @@ p.modal-form-pretitle {
   margin-bottom: 20px;
   resize: none;
   width: 100%;
+  border-radius: 0;
+  background: none !important;
 }
 .modal-body.modal-form-body span {
   color: #f6255b;
@@ -995,7 +963,7 @@ p.confi:before {
   background-image: url("../img/bg-6.png");
   background-position: center center;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   min-height: 960px;
   object-fit: contain;
 }
@@ -1022,6 +990,14 @@ p.confi:before {
 .lay-logo-bottom img.text-logo {
   width: 205px;
   height: 66px;
+}
+
+.sect-bg-7 .h3-section-title {
+  margin: 200px 0 80px 0;
+}
+
+.sect-bg-8 .h3-section-title {
+  margin: 200px 0 80px 0;
 }
 
 .spikers-w {
@@ -1086,7 +1062,7 @@ p.confi:before {
   background-image: url("../img/bg-10.png");
   background-position: center center;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   min-height: 1129px;
   object-fit: contain;
 }
@@ -1115,7 +1091,7 @@ p.confi:before {
   background-image: url("../img/contact.png");
   background-position: center center;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   object-fit: contain;
   height: 884px;
 }
@@ -1197,6 +1173,10 @@ p.confi:before {
 
 .checked-price {
   margin-right: 17px;
+}
+.checked-price img {
+  width: 24px;
+  height: 24px;
 }
 
 .text-price {
@@ -1342,18 +1322,6 @@ p.confi:before {
   margin-bottom: 28px;
 }
 
-.background input {
-  width: 470px;
-  height: 63px;
-  background: #F2F2FF;
-  border-radius: 8px;
-  font-size: 14px;
-  line-height: 36px;
-  padding: 0 20px;
-  color: #979BB3;
-  border: 0;
-  margin-top: 16px;
-}
 .form-submit {
   width: 470px;
   height: 63px;
@@ -1375,7 +1343,7 @@ p.confi:before {
   line-height: 140%;
   display: flex;
   align-items: center;
-  color: #F2F2FF;
+  color: #0F1435;
 }
 .has-feedback a {
   color: #F6255A;
@@ -1389,7 +1357,18 @@ p.confi:before {
   justify-content: space-between;
   align-items: flex-start;
 }
-
+.contact-bloc .background input {
+  width: 470px;
+  height: 63px;
+  background: #F2F2FF;
+  border-radius: 8px;
+  font-size: 14px;
+  line-height: 36px;
+  padding: 0 20px;
+  color: #979BB3;
+  border: 0;
+  margin-top: 16px;
+}
 .footer {
   background: #040B3C;
   width: 100%;
@@ -1705,7 +1684,6 @@ p.confi:before {
   .conf-photos_2 {
     margin: 0 15px;
     width: calc(100% - 30px);
-    margin-top: 25px;
   }
 
   .section-6-container .slick-arrow svg {
@@ -1731,7 +1709,6 @@ p.confi:before {
     display: block;
     width: 100px;
     height: 32px;
-    display: block;
   }
 
   .header-contact {
@@ -2231,7 +2208,7 @@ p.confi:before {
     display: none;
   }
 
-  .background input {
+  .contact-bloc .background input {
     width: 320px;
   }
 
@@ -2268,6 +2245,18 @@ p.confi:before {
 @media screen and (max-width: 421px) {
   .container {
     width: 100%;
+  }
+
+  .sec-6-content .bloc-person {
+    margin: 15px;
+  }
+
+  .sec-10-content .price-btn {
+    width: 280px;
+  }
+
+  .certificate {
+    width: 320px !important;
   }
 }
 
