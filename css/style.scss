@@ -111,7 +111,7 @@ button.header-btn {
   display: block;
 }
 .flex {
- position: relative;
+  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1524,24 +1524,24 @@ p.confi {
     color: $color-1;
 
     a{
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 140%;
-    color: $color-1;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 140%;
+      color: $color-1;
+    }
   }
-}
-.social-flex {
-  display: flex;
-  margin: 30px 0;
+  .social-flex {
+    display: flex;
+    margin: 30px 0;
 
-  .square i {
-    width: 22px;
-    height: 16px;
-    font-size: 20px;
-    margin: 0 7px;
-    color: $color-1;
+    .square i {
+      width: 22px;
+      height: 16px;
+      font-size: 20px;
+      margin: 0 7px;
+      color: $color-1;
+    }
   }
-}
   .copy{
     font-style: normal;
     font-weight: 300;
@@ -2070,6 +2070,7 @@ p.confi {
   .sect-bg-8 .h3-section-title {
     margin: 60px 0;
   }
+
 }
 
 /*******************************      SM       ***********************/
@@ -2401,8 +2402,8 @@ p.confi {
     display: none;
   }
   .contact-bloc .background input {
-       width: 320px;
-     }
+    width: 320px;
+  }
   .sect-bg-6 {
     background-position: center center;
     background-size: cover;
@@ -2474,7 +2475,7 @@ p.confi {
   }
   .sec-10-content .price-btn {
     width: 280px;
-    }
+  }
   .certificate {
     width: 320px !important;
   }
