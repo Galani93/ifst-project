@@ -17,7 +17,6 @@ body {
 
 .header {
   width: 100%;
-  height: 118px;
   background: #040B3C;
   box-shadow: 10px 10px 20px rgba(0, 6, 46, 0.47);
 }
@@ -87,24 +86,94 @@ button.header-btn {
 
 }
 
-.burger {
-  span {
-    height: 4px;
-    width: 35px;
-    background: white;
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 4px;
-    cursor: pointer;
-  }
-
+.header .menu-button {
   cursor: pointer;
-}
-
-.burger, .mobile_data_w, .prog_col.hide {
+  width: 24px;
+  height: 24px;
+  background: url("../img/menu.svg");
   display: none;
-}
 
+}
+.header .menu-button.active {
+  background: url("../img/close.svg");
+  width: 24px;
+  height: 24px;
+}
+.header .logo{
+  width: 171px;
+  height: 61px;
+  img{
+    width: 100%;
+    height: 100%;
+  }
+}
+.header .header-contact.opened {
+  display: block;
+}
+.flex {
+ position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  align-items: center;
+  padding: 28px 0;
+}
+@media (max-width: 750px) {
+
+  .header .header-contact {
+    display: none;
+  }
+}
+@media (max-width: 998px) {
+  .header .logo{
+    width: 81px;
+    height: 29px;
+    img{
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .header .login {
+    margin-left: 100px;
+  }
+  .header .menu-button {
+    display: block;
+    margin-top: 18px;
+  }
+  .header .header-contact{
+    position: absolute;
+    display: none;
+    top: 100%;
+    right: 0;
+    left: 0;
+    z-index: 3;
+    background: #040C3E;
+    box-shadow: 10px 10px 10px rgb(0 0 0 / 4%);
+    margin: 0;
+    padding: 34px 42px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 97%;
+    border-top: 1px solid #FFFFFF;
+  }
+  .header .header-contact.opened {
+    display: block;
+    width: 100%;
+  }
+  .header .header-contact a  {
+    display: block;
+    margin: 0 0 24px 0;
+  }
+}
 
 .section_container {
   display: flex;
@@ -116,9 +185,9 @@ button.header-btn {
   background-image: url("../img/bg-01.png");
   background-position: top center;
   background-repeat: no-repeat;
-  background-size: contain;
-  min-height: 1240px;
-  object-fit: cover;
+  background-size: cover;
+  min-height: 900px;
+  object-fit: contain;
 }
 
 .logo-container {
@@ -372,7 +441,7 @@ button.header-btn {
 }
 
 .sect-bg-4 {
-  background-image: url("../img/bg-04.png");
+  background-image: url("../img/bg-4.png");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -380,8 +449,6 @@ button.header-btn {
 }
 
 .sec-4-content {
-
-  background: rgba(1, 3, 24, 0.6);
   width: 100%;
   height: 100%;
 
@@ -628,6 +695,8 @@ button.header-btn {
 
   div {
     height: 100%;
+    display: flex;
+    align-items: center;
   }
 
   .carousel-control {
@@ -1001,6 +1070,15 @@ p.confi {
   .h3-section-title {
     margin: 200px 0 80px 0;
   }
+}
+.sect-bg-7 {
+  .h3-section-title {
+    margin: 200px 0 80px 0;
+  }
+
+}
+.mob-indicators {
+  display: none;
 }
 .sect-bg-8 {
   .h3-section-title {
@@ -1381,7 +1459,7 @@ p.confi {
   line-height: 140%;
   display: flex;
   align-items: center;
-  color: $color-3;
+  color: $color-1;
 
   a {
     color: $color-2;;
@@ -1419,54 +1497,42 @@ p.confi {
 
 .footer {
   background: #040B3C;
-  width: 100%;
 
-  .container-foo.container {
-    padding: 90px 0;
-    min-height: 379px;
+  .logo-footer {
+    a img {
+      width: 165px;
+      height: 53px;
+    }
   }
-
-  .foo-title {
+  .flex{
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-top: 68px;
+  }
+  .foo-title{
     font-weight: bold;
     font-size: 18px;
     line-height: 30px;
     color: $color-1;
-    margin-bottom: 24px;
+    padding-top: 24px;
   }
-
-  .tel-foo a {
+  .footer-item {
+    padding: 5px 0;
     font-weight: normal;
     font-size: 14px;
     line-height: 140%;
     color: $color-1;
-    padding: 6px 0;
-  }
 
-  .adress {
+    a{
     font-weight: normal;
     font-size: 14px;
     line-height: 140%;
     color: $color-1;
-    padding: 26px 0;
-    width: 231px;
   }
 }
-
-.bottom-foo-line {
-  align-items: center;
-  font-style: normal;
-  font-weight: 300;
-  font-size: 14px;
-  line-height: 20px;
-  color: $color-1;
-
-  span {
-    font-weight: bold;
-  }
-}
-
 .social-flex {
   display: flex;
+  margin: 30px 0;
 
   .square i {
     width: 22px;
@@ -1475,7 +1541,34 @@ p.confi {
     margin: 0 7px;
     color: $color-1;
   }
-
+}
+  .copy{
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: $color-1;
+    .footer-copy{
+      font-weight: bold;
+      color: $color-1;
+    }
+  }
+}
+.buttom-up {
+  position: fixed;
+  bottom: 20px;
+  right: 25px;
+  padding: 5px 8px;
+  color: $color-1;
+  text-align: center;
+  background-color: transparent;
+  cursor: pointer;
+  border-radius: 50%;
+  z-index: 99999;
+  opacity: 0.6;
+  width: 33px;
+  height: 33px;
+  border: 2px solid #F2F2FF;
 }
 
 .modile-slider {
@@ -1724,7 +1817,7 @@ p.confi {
 
 @media screen and (max-width: 992px) {
   .header {
-    height: 53px;
+
   }
   .conf-photos_1 {
     margin: 0 15px;
@@ -1790,8 +1883,12 @@ p.confi {
     flex-wrap: wrap;
   }
 
-  .foo-title {
-    margin-top: 30px;
+  .footer {
+
+    .footer-item, .foo-title {
+      text-align: left;
+    }
+
   }
 
   .mobile_data_w {
@@ -1846,7 +1943,7 @@ p.confi {
 
   .spiker_box_w {
     height: auto;
-    margin-bottom: 0;
+    margin: 0 10px;
   }
 
   .conf-photos_1 .conf-photos_2 {
@@ -1894,39 +1991,15 @@ p.confi {
 
       .carousel-indicators {
         bottom: -50px;
-        left: 40%;
+        left: 50%;
+
+        li{
+          margin: 0 8px;
+        }
       }
     }
   }
-  .sec-2-content {
-    .row.d-flex {
-      justify-content: center;
-      align-items: center;
-      display: flex;
-      margin: 0 auto;
-      flex-direction: column;
 
-      .useg-bloc {
-        width: 288px;
-        height: 80px;
-      }
-
-      .useg {
-        font-size: 14px;
-        margin-bottom: 0;
-      }
-
-      .useg-bloc:nth-child(2n+1) {
-        margin-right: 0;
-        margin-bottom: 30px;
-      }
-
-      .useg:before {
-        margin: 0 15px 0 3px;
-      }
-    }
-
-  }
   .row.program-bloc {
     flex-direction: column;
     margin: 10px;
@@ -1941,10 +2014,62 @@ p.confi {
     flex-wrap: wrap;
 
   }
+  .sec-6-content {
+    .modile-slider {
+      .carousel-control {
+        position: absolute;
+        bottom: 30px;
+        left: auto;
+        top: auto;
+        margin: 0;
+
+        img {
+          width: 24px;
+          height: 24px;
+        }
+      }
+    }
+  }
+  .carousel-indicators.mob-indicators{
+    position: absolute;
+    bottom: -50px;
+    left: 0;
+    right: 0;
+    z-index: 15;
+    width: 100%;
+    padding-left: 0;
+    text-align: center;
+    list-style: none;
+    margin: 0 auto;
+    @include display-flex-2;
+
+    li{
+      margin: 0 8px;
+    }
+  }
   .modile-slider {
     display: block;
   }
-
+  .h3-section-title {
+    text-align: left;
+  }
+  .sec-3-content , .sect-bg-5{
+    padding: 60px 0;
+  }
+  .sec-4-content .h3-section-title {
+    margin: 60px 0;
+    font-size: 24px;
+    text-align: left;
+  }
+  .sec-6-content .h3-section-title {
+    margin: 60px 0;
+  }
+  .sect-bg-7 .h3-section-title {
+    margin: 60px 0;
+  }
+  .sect-bg-8 .h3-section-title {
+    margin: 60px 0;
+  }
 }
 
 /*******************************      SM       ***********************/
@@ -2027,9 +2152,9 @@ p.confi {
   }
 
   p.h3-section-title {
-    text-align: center;
     position: relative;
     z-index: 2;
+    text-align: left;
   }
 
   .col-t {
@@ -2252,6 +2377,8 @@ p.confi {
   .accordion {
     .mb-0, .card-body {
       font-size: 14px;
+      display: flex;
+      align-items: center;
     }
   }
   .container.section_container {
@@ -2300,7 +2427,33 @@ p.confi {
     }
   }
 
+  .sec-2-content {
+    .row.d-flex {
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      margin: 0 auto;
 
+      .useg-bloc {
+        width: 288px;
+        height: 80px;
+      }
+
+      .useg {
+        font-size: 14px;
+        margin-bottom: 0;
+      }
+
+      .useg-bloc:nth-child(2n+1) {
+        margin-bottom: 30px;
+      }
+
+      .useg:before {
+        margin: 0 15px 0 3px;
+      }
+    }
+
+  }
 }
 
 /*******************************      XS       ***********************/
@@ -2324,5 +2477,9 @@ p.confi {
     }
   .certificate {
     width: 320px !important;
+  }
+  .useg-bloc:nth-child(2n+1) {
+    margin-right: 0;
+    margin-bottom: 15px;
   }
 }

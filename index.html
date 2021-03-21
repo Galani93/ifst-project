@@ -48,23 +48,14 @@
 
 <body>
 <header class="header">
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12 header top-header">
-                <a class="logo" href="#">
-                    <img class="header-logo" src="img/logo.png" height="104" width="323" alt="logo"/></a>
-                <div class="header-contact">
-                    <a href="tel:8 (812) 424-46-47">8 <span class="pink-text">(812)</span> 424-46-47 </a>
-                    <a href="mailto:info@nfst.ru"><span class="pink-text">info@</span>nfst.ru</a>
-                    <button class="header-btn" data-toggle="modal" data-target="#regModal">зарегестироваться</button>
-                </div>
-                <div class="burger">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-            </div>
+    <div class="flex container">
+        <div class="logo"><a href="/"><img src="img/logo.png" alt="logo"></a></div>
+        <div class="header-contact">
+            <a href="tel:8 (812) 424-46-47">8 <span class="pink-text">(812)</span> 424-46-47 </a>
+            <a href="mailto:info@nfst.ru"><span class="pink-text">info@</span>nfst.ru</a>
+            <button class="header-btn" data-toggle="modal" data-target="#regModal">зарегестироваться</button>
         </div>
+        <div class="menu-button"></div>
     </div>
 </header>
 <section class="section  first-section-bg">
@@ -503,9 +494,32 @@
 
                             </div>
                         </div>
+                        <div class="item">
+                            <div class="bloc-person">
+                                <div class="icon-person">
+                                    <img src="img/person.png"  alt="person"/>
+                                </div>
+                                <h2>Зоя Иванова</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit placerat.</p>
+
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="bloc-person">
+                                <div class="icon-person">
+                                    <img src="img/person.png"  alt="person"/>
+                                </div>
+                                <h2>Зоя Иванова</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit placerat.</p>
+
+                            </div>
+                        </div>
                     </div>
 
+                    <a class="right carousel-control" href="#myCarousel4" role="button" data-slide="next">
 
+                        <img src="img/Arrow-right.png" alt="right"/>
+                    </a>
                 </div>
             </div>
         </div>
@@ -575,6 +589,13 @@
             </div>
         </div>
         <div id="carousel" class="carousel slide " data-ride="carousel" data-type="multi" data-interval="2500">
+            <ol class="carousel-indicators mob-indicators">
+                <li data-target="#carousel" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel" data-slide-to="1"></li>
+                <li data-target="#carousel" data-slide-to="2"></li>
+                <li data-target="#carousel" data-slide-to="3"></li>
+                <li data-target="#carousel" data-slide-to="4"></li>
+            </ol>
             <div class="carousel-inner">
                 <div class="item active">
                     <div class="carousel-col">
@@ -627,6 +648,13 @@
             </div>
         </div>
         <div id="carousel2" class="carousel slide " data-ride="carousel" data-type="multi" data-interval="2500">
+            <ol class="carousel-indicators mob-indicators">
+                <li data-target="#carousel2" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel2" data-slide-to="1"></li>
+                <li data-target="#carousel2" data-slide-to="2"></li>
+                <li data-target="#carousel2" data-slide-to="3"></li>
+                <li data-target="#carousel2" data-slide-to="4"></li>
+            </ol>
             <div class="carousel-inner">
                 <div class="item active">
                     <div class="carousel-col">
@@ -1170,50 +1198,55 @@
         </div>
     </div>
 </section>
+
 <footer class="footer">
-    <div class="container-foo container">
-        <div class="row">
-            <div class="col-md-4 col-lg-4">
-                <img src="img/logo-footer.png" alt="logo">
-                <p class="adress">Санкт-Петербург,
-                    Краснопутиловская ул., 69</p>
-                <div class="social-flex">
-                    <div class="square"><a href="#">  <i class="fab fa-instagram"></i> </a></div>
-                    <div class="square"><a href="#"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></div>
-                    <div class="square"><a href="#"> <i class="fab fa-youtube" aria-hidden="true"></i> </a></div>
+    <div class="container">
+        <div class="flex ">
+                <div class="col-md-3">
+                    <div class="logo-footer"><a href="/"><img src="img/logo.png"></a></div>
+                    <div class="footer-item">Санкт-Петербург, Краснопутиловская ул., 69</div>
+                    <div class="social-flex">
+                        <div class="square"><a href="#">  <i class="fab fa-instagram"></i> </a></div>
+                        <div class="square"><a href="#"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></div>
+                        <div class="square"><a href="#"> <i class="fab fa-youtube" aria-hidden="true"></i> </a></div>
+                    </div>
                 </div>
+                <div class="col-md-3">
+                    <div class="foo-title">Контакты</div>
+                    <div class="footer-item">
+                        <a href="tel:8 (800) 511-97-75" class="phone">8 (800) 511-97-75</a>
+                    </div>
+                    <div class="footer-item">
+                        <a href="mailto:info@smetaplan.ru" class="mail">info@smetaplan.ru</a>
+                    </div>
 
-            </div>
-            <div class="col-md-2 col-lg-2">
-                <div class="foo-title">Контакты</div>
-                <p class="tel-foo"><strong><a href="tel:+7(812)4244647">+7  (812) 424 46 47</a></strong></p>
-                <p class="tel-foo"> <a href="mailto:info@gostonomica.ru">info@gostonomica.ru</a></p>
-                <br>
-            </div>
-            <div class="col-md-3 col-lg-3">
-                <div class="foo-title">Документы</div>
-                <p class="tel-foo"> <a href="#">Политика конфиденциальности</a></p>
-                <p class="tel-foo"> <a href="#">Документ № 1</a></p>
-                <p class="tel-foo"> <a href="#">Документ № 2</a></p>
+                </div>
+                <div class="col-md-3">
+                    <div class="foo-title">Документы</div>
+                    <div class="footer-item"><a href="#">Политика конфиденциальности</a></div>
+                    <div class="footer-item"><a href="#">Документ № 1</a></div>
+                    <div class="footer-item"><a href="#">Документ № 2</a></div>
 
-            </div>
-            <div class="col-md-3 col-lg-3">
-                <div class="foo-title">Навигация по сайту</div>
-                <p class="tel-foo"> <a href="#">О конференции</a></p>
-                <p class="tel-foo"> <a href="#">Программа</a></p>
-                <p class="tel-foo"> <a href="#">Спикеры</a></p>
-                <p class="tel-foo"> <a href="#">Партнеры</a></p>
-                <p class="tel-foo"> <a href="#">Стоимость</a></p>
-            </div>
+
+                </div>
+                <div class="col-md-3">
+                    <div class="foo-title">Навигация по сайту</div>
+                    <div class="footer-item"><a href="#">О конференции</a></div>
+                    <div class="footer-item"><a href="#">Программа</a></div>
+                    <div class="footer-item"><a href="#">Программа</a></div>
+                    <div class="footer-item"><a href="#">Спикеры</a></div>
+                    <div class="footer-item"><a href="#">Партнеры</a></div>
+                    <div class="footer-item"><a href="#">Стоимость</a></div>
+                </div>
         </div>
-        <div class="row ">
-            <div class="bottom-foo-line col-lg-4">Все права защищены <br> <span>© 2019 АНО «Интепром Стандарт»</span>
+        <div class="flex">
+            <div class="copy">Copyright &copy; 2015-2021 Все права защищены<a href="#" class="footer-copy"> ООО
+                «ИндигоСофт»</a>.
             </div>
+
         </div>
     </div>
-
 </footer>
-
 
 <!-- Modal -->
 <div id="regModal" class="modal fade registration-modal" role="dialog">
