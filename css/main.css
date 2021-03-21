@@ -1516,12 +1516,12 @@ p.confi:before {
   position: fixed;
   bottom: 20px;
   right: 25px;
-  padding: 5px 8px;
+  padding: 6px 9px !important;
   color: #F2F2FF;
   text-align: center;
   background-color: transparent;
   cursor: pointer;
-  border-radius: 50%;
+  border-radius: 50% !important;
   z-index: 99999;
   opacity: 0.6;
   width: 33px;
