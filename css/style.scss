@@ -1401,9 +1401,8 @@ p.confi {
 }
 
 .logos-w {
-  display: flex;
+  @include display-flex-2;
   flex-wrap: wrap;
-  align-items: center;
   padding-bottom: 240px;
 }
 
