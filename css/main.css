@@ -1918,12 +1918,6 @@ p.confi:before {
     margin: 0 10px;
   }
 
-  html, body {
-    overflow: auto;
-    /*Avoid flicker on slides transitions for mobile phones #336 */
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  }
-
   ul#menu {
     display: none;
   }
