@@ -1041,7 +1041,14 @@ p.confi {
   padding-top: 200px;
 
 }
-
+.sec-7-content{
+  .title-sec-7{
+    margin-top: 79px;
+  }
+  .h3-section-title {
+    margin: 0;
+  }
+}
 
 .lay-logo-bottom {
   position: relative;
@@ -1058,6 +1065,7 @@ p.confi {
   img.logo-bgs {
     width: 232px;
     height: 207px;
+    transform: rotate(45deg);
   }
 
   img.text-logo {
@@ -1364,6 +1372,11 @@ p.confi {
   .card {
     border-top: 1px solid #333C72;
     padding: 32px 0;
+
+
+    &:last-child{
+      border-bottom: 1px solid #333C72;
+    }
   }
 
   .mb-0 {
@@ -2351,8 +2364,8 @@ p.confi {
     height: 71px;
   }
   .lay-logo-bottom img.logo-bgs {
-    width: 79px;
-    height: 71px;
+      width: 79px;
+      height: 71px;
   }
 
   .price_color {

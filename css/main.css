@@ -1052,6 +1052,13 @@ p.confi:before {
   padding-top: 200px;
 }
 
+.sec-7-content .title-sec-7 {
+  margin-top: 79px;
+}
+.sec-7-content .h3-section-title {
+  margin: 0;
+}
+
 .lay-logo-bottom {
   position: relative;
   left: 307px;
@@ -1066,6 +1073,7 @@ p.confi:before {
 .lay-logo-bottom img.logo-bgs {
   width: 232px;
   height: 207px;
+  transform: rotate(45deg);
 }
 .lay-logo-bottom img.text-logo {
   width: 205px;
@@ -1350,6 +1358,9 @@ p.confi:before {
 .accordion .card {
   border-top: 1px solid #333C72;
   padding: 32px 0;
+}
+.accordion .card:last-child {
+  border-bottom: 1px solid #333C72;
 }
 .accordion .mb-0 {
   font-weight: normal;
